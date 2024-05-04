@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AltWorld
 
-## Getting Started
+This project was generated using Next.js.
 
-First, run the development server:
+## Description
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+AltWorld is a platform designed for managing assignments and profiles. It allows users to view profiles, shortlist them, and manage assignments efficiently.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository.
+2. Navigate to the project directory.
+3. Run `npm install` to install dependencies.
+4. Run `npm run dev` to start the development server.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+### RootLayout
 
-To learn more about Next.js, take a look at the following resources:
+- `RootLayout` is a component used to provide a consistent layout structure for the application.
+- It sets the HTML lang attribute to 'en' and applies global styles defined in `globals.css`.
+- It utilizes the Inter font from Google Fonts.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Home
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- The `Home` component represents the main dashboard page of the application.
+- It displays a sidebar, a list of profiles, and profile details.
+- Users can select profiles, view their details, and shortlist them.
 
-## Deploy on Vercel
+### ProfileCard
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `ProfileCard` is a reusable component used to display individual profile cards.
+- It includes profile information such as name, email, and percentage.
+- Clicking on a profile card selects the profile.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### ProfileDetails
+
+- `ProfileDetails` displays detailed information about a selected profile.
+- It includes profile image, name, email, percentages, about, experience, hobbies, introduction, and a video.
+- Users can shortlist or remove profiles from the shortlist.
+
+### SideBar
+
+- `SideBar` is a sidebar component providing navigation and options for creating assignments.
+- It includes icons for navigation and a button to create a new assignment.
+
+### Profiles
+
+- `Profiles` component displays a list of profiles along with their scores and status.
+- Users can toggle between reviewing all profiles and viewing only shortlisted profiles.
+
+## Dependencies
+
+- Next.js
+- React
+- Next.js Google Fonts
+- Tailwind CSS
+
+## Contributing
+
+Contributions are welcome. Please create a pull request for any changes or fixes.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

@@ -32,23 +32,6 @@ const Home = () => {
           profile={allProfiles}
         />
         <ProfileDetails profile={profile} />
-        {/* <div className="w-3/6 flex mt-[104px] rounded-md">
-          
-          <div className="w-11/12 p-2">
-            <div style={{ height: "500px" }} >
-              <video
-                autoPlay
-                controls
-                style={{ height: "100%", width: "100%", borderRadius: "10px" }}>
-                <source
-                  src="https://www.youtube.com/embed/p80VyQ5wLvg?si=cLATPyHUBq5yCwNf"
-                  type="video/mp4"
-                />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
-        </div> */}
       </div>
       <footer className=" text-[rgb(193,202,214)] text-[12px] font-[500] flex items-center justify-around h-12">
         <div style={{ marginLeft: "50px" }}>Privacy @2024</div>
